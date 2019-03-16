@@ -1,8 +1,3 @@
-//CLARKSON UNIVERSITY
-//CS344
-//SPRING 2019
-//PROJECT 1
-
 //LIBRARIES
 #include <iostream>
 
