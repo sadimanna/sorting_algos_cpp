@@ -1,2 +1,2 @@
-# sorting_algos_cpp
+# SORTING ALGORITHMS IN C++
 Different Sorting algorithms in C++
