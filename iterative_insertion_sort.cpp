@@ -1,8 +1,3 @@
-//CLARKSON UNIVERSITY
-//CS344
-//SPRING 2019
-//PROJECT 1
-
 //LIBRARIES
 #include <iostream>
 
@@ -10,7 +5,7 @@
 using namespace std;
 
 //1.Implement the iterative version of insertion sort.
-
+//PSEUDOCODE
 /*
 insertion_sort(a, i, j)
 {
