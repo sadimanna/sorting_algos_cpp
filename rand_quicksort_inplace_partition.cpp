@@ -5,8 +5,8 @@
 //NAMESPACE
 using namespace std;
 
-/*. Implement a randomized version of quicksort that uses the partioning algorithm
-from the previous step.*/
+/*. Implement a randomized version of quicksort that uses the in-place partioning
+algorithm described in Sect. 3.6.*/
 //PSEUDOCODE
 /*quicksort(a, i, j)
 {
