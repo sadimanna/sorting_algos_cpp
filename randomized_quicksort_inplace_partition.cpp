@@ -27,6 +27,7 @@ void quicksort(int *arr, int low, int high)
 		arrpiv=low + rand()%arrlen;
 		grtind = arrpiv;
 		//arrpiv -> index of pivot element in the array
+		//SETTING PIVOT ELEMENT
 		pivot = arr[arrpiv];
 		cout << "Pivot element -> " << pivot << " || Index -> "<< arrpiv <<endl;
 		//PARTITION
@@ -36,21 +37,27 @@ void quicksort(int *arr, int low, int high)
 		while(i<high)
 		{
 			cout<<"Array index -> "<<i<<" Array element -> "<<arr[i]<<endl;
-			//SWAPPING THE ELEMENTS
+			//ARRANGING THE ARRAY
 			if(arr[i] < pivot && arrpiv < i)
 			{
+				//SHIFTING THE RIGHT PARTITION ONE PLACE TOWARDS RIGHT
+				//AND PLACING THE ELEMENT SMALLER THAN THE PIVOT 
+				//AT THE START INDEX OF THE RIGHT PARTITION
 				cout<<"Pivot > " << arr[i]<<" && "<<"Index > Pivot index"<<endl;
 				temp = arr[i];
 				for(k=i;k>grtind;k--)
 					arr[k] = arr[k-1];
 				arr[grtind] = temp;
+				//UPDATING THE PIVOT INDEX
 				arrpiv++;
+				//UPDATING THE START OF THE RIGHT PARTITION
 				grtind++;
 				i++;
 			}
 			else if (pivot < arr[i])
 			{
 				cout<<"Pivot < " << arr[i]<<" && "<<"Index < Pivot index"<<endl;
+				//SETTING THE INDEX OF THE FIRST ELEMENT OF THE RIGHT PARTITION
 				if(flag==0)
 				{
 					grtind = i;
